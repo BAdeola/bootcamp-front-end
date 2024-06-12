@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+</head>
+<body>
+    <h1>Tabelas no HTML</h1>
+
+    <section id="students">
+        <h2>Tabela de Alunos</h2>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Nome</th> <!---Na thead nós utilizamos th como célula-->
+                    <th>E-mail</th>
+                    <th>Matricula</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Carol Danvers</td>
+                    <td>carol.danvers@email.com</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Peter Perker</td>
+                    <td>peter.parker@email.com</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>Tony Stark</td>
+                    <td>tony.stark@email.com</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Tabela de controle financeiro</h2>
+        <table border="1px">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">15/06/2022</td>
+                    <td>Despesa</td>
+                    <td>Almoço</td>
+                    <td>R$ 35,00</td>
+                </tr>
+                <tr>
+                    <td>Receita</td>
+                    <td>Salário</td>
+                    <td>R$ 3.658,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
