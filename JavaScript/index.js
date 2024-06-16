@@ -1,6 +1,6 @@
 const prompt = require ('readline-sync')
 
-let idade = prompt.question("Qual a sua idade? ")
+let idade = Number(prompt.question("Qual a sua idade? "))
 
 
 // Coerção explicita ou conversão manual
