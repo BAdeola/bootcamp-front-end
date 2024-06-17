@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #222222;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #333333;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+header nav#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 129rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    height: 8rem;
+}
+
+header nav#navbar .nav-brand{
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+header nav#navbar .nav-brand h1{
+    font-family: "Grenze", serif;
+    font-size: 3.8rem;
+}
+
+header nav#navbar ul.nav-list {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    gap: 5rem;
+}
+
+header nav#navbar ul.nav-list li a {
+    color: #ccc;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+header nav#navbar ul.nav-list li a:hover {
+    color: white;
+    transition: color 0.3s;
+}
+
+section#articles {
+    margin-top: 5rem;
+    max-width: 120rem;
+    padding: 0 4rem;
+    margin: 4rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4.6rem;
+}
+

@@ -1,0 +1,46 @@
+header {
+    background-color: #333333;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+header nav#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 129rem;
+    margin: 0 auto;
+    padding: 0 4rem;
+    height: 8rem;
+}
+
+header nav#navbar .nav-brand{
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+header nav#navbar .nav-brand h1{
+    font-family: "Grenze", serif;
+    font-size: 3.8rem;
+}
+
+header nav#navbar ul.nav-list {
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+    gap: 5rem;
+}
+
+header nav#navbar ul.nav-list li a {
+    color: #ccc;
+    font-size: 1.8rem;
+    transition: color 0.3s;
+}
+
+header nav#navbar ul.nav-list li a:hover {
+    color: white;
+    transition: color 0.3s;
+}
