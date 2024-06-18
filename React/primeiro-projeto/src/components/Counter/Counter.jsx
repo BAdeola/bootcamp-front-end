@@ -3,7 +3,7 @@ import React from "react";
 export class Counter extends React.Component {
     constructor() {
         super()
-        this.state = { contador: 0, name: '', password: '' };
+        this.state = { contador: 0, name: '', password: '' }; // essa é a maneira de settar o estado, estados são basicamente variáveis que sofrem ações no componente
 
     }
 
@@ -23,7 +23,7 @@ export class Counter extends React.Component {
                 </div>
 
                 <form style={ { marginTop: '40px' } }>
-                    <input type="text" placeholder="Nome" value={this.state.name} onChange={(event) => {this.setState({name: event.target.value})}}/>
+                    <input type="text" placeholder="Nome" value={this.state.name} onChange={(event) => {this.setState({name: event.target.value})}}/> 
                     <input type="senha" placeholder="Senha" value={this.state.password} onChange={(event) => {this.setState({password: event.target.value})}}/>
                     <button>Enviar</button>
                 </form>
