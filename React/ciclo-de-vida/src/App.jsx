@@ -1,8 +1,9 @@
 import React from "react"
+import { Counter } from "./components/Counter/Counter";
 
 
 class App extends React.Component {
-  constructor(){
+  constructor(){/*o constructor(){} é sempre necessário quando o queremos criar um state (uma variável)*/
     super();
 
     this.state = { showCounter: false } //é uma variável para mostrar ou não o conteúdo
@@ -19,6 +20,8 @@ class App extends React.Component {
         <button onClick={() => {
           this.setState({ showCounter: !this.state.showCounter });
         }}>{ this.state.showCounter ? 'Remover Contador' : 'Mostrar Contador' }</button> {/* caso o estado da variável seja verdadeiro, irá mostrar 'Remover Contador', caso contrário 'Mostrar Contador' */}
+
+        {this.state.showCounter ? <Counter/> : null}
       </div>
     );
   }
